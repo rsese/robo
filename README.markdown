@@ -2,7 +2,7 @@
 
 Robo is a simple [Jekyll](http://jekyllrb.com) theme that you can use for your blog. 
 
-![robo-screenshot](http://link)
+![robo-screenshot](http://robo.hellarobots.com/assets/images/robo-screenshot.png)
 
 # Install
 
