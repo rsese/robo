@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body id="home">
+    <div id="container"> 
+      <header class="group">
+        <div class="header-inner">
+          <h1 class="logo"><a href="/">{{ site.title }}.</a></h1>
+          {% include nav.html %}
+        </div>
+      </header>
+      <div id="content">
+        {% include hero.html %}
+        <section id="main" class="group">
+          {{ content }}
+        </section> 
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+google_analytics:
+highlighter:      pygments
+markdown:         kramdown
+permalink:        pretty
+title:            Robo Theme
+
+links:
+  - name: home
+    url: /
+  - name: posts
+    url: /posts
+  - name: about
+    url: /#about

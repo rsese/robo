@@ -1,0 +1,388 @@
+/*
+ * Robot theme master stylesheet
+ */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.eot');
+    src: url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('robotoslab_regular_macroman/RobotoSlab-Regular-webfont.svg#roboto_slabbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('robotoslab_bold_macroman/RobotoSlab-Bold-webfont.eot');
+    src: url('robotoslab_bold_macroman/RobotoSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('robotoslab_bold_macroman/RobotoSlab-Bold-webfont.woff') format('woff'),
+         url('robotoslab_bold_macroman/RobotoSlab-Bold-webfont.ttf') format('truetype'),
+         url('robotoslab_bold_macroman/RobotoSlab-Bold-webfont.svg#roboto_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* [TODO]: mini-reset. replace with a real reset. */
+h1, h2, h3, h4, h5, div, p, ul, li, section, aside {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgba(0,0,0, 0.75);
+  font-size: 100%;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  background-color: #FDFDFD;
+}
+
+a:link,
+a:visited {
+  color: #F33;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F33;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 0 2px;
+}
+
+code {
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #AAAAAA;
+  border-top: 1px solid #AAAAAA;
+}
+
+pre {
+  margin: 2em 1.5em;
+}
+
+pre code {
+  display: block;
+  line-height: 1.75;
+  overflow: auto;
+  padding: 15px;
+}
+
+blockquote {
+  border-left: 8px solid #EEEEEE;
+  margin: 2em 1.5em;
+  padding: 15px;
+}
+
+blockquote:before {
+  color: #EEEEEE;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #CCCCCC;
+  margin: 2em 1.5em;
+}
+
+#content {
+  margin: 0 auto;
+  padding: 25px 0 0;
+  width: 750px;
+}
+
+p {
+  margin: 1em 0 1.3em 0;
+}
+
+header {
+  border-bottom: 1px dashed #000;
+  margin: 0;
+  padding: 10px 0;
+}
+
+header .logo {
+  float: left;
+  font-family: "Roboto Bold";
+  font-size: 2em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header .logo a:link,
+header .logo a:hover,
+header .logo a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.main-nav ul li {
+  float: left;
+  margin: 0 0 0 25px;
+}
+
+.main-nav ul li a:link,
+.main-nav ul li a:visited {
+  background-color: #333;
+  color: #FFF;
+  padding: 3px 6px;
+}
+
+.main-nav ul li a:hover {
+  background-color: #FFF;
+  color: #333;
+  padding: 3px 6px;
+  text-decoration: none;
+}
+
+.footer-inner,
+.header-inner {
+  margin: 0 auto;
+  width: 750px;
+}
+
+section {
+}
+
+#main {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+#main h2 {
+  font-family: "Roboto Bold";
+  font-size: 1.75em;
+  margin-bottom: 1em;
+}
+
+#main h3 {
+  font-family: "Roboto Bold";
+  font-size: 1.45em;
+  margin-bottom: 0.75em;
+}
+
+#main h4 {
+  font-family: "Roboto Bold";
+  font-size: 1.25em;
+  margin-bottom: 0.75em;
+}
+
+#main h5 {
+  margin-bottom: 0.5em;
+  font-family: "Roboto Bold";
+  font-size: 1.15em;
+  font-style: italic;
+}
+
+#main ul {
+  list-style-type: square;
+  margin-left: 32px;
+}
+
+#main ul li {
+  margin-bottom: 1.5em;
+}
+
+#sup-about p {
+  font-size: 1.25em;
+}
+
+#main .projects,
+#main .posts {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.projects li,
+.posts li {
+  border-bottom: 1px dashed #999;
+  margin: 10px 0 13px 0;
+  padding-bottom: 13px;
+}
+
+.posts li p {
+  margin-bottom: 1em;
+}
+.projects li p {
+  margin-bottom: 0;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar h2 {
+  font-size: 1em;
+}
+
+footer {
+  border-top: 8px solid #222;
+  margin-top: 64px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.80em;
+  padding-top: 15px;
+}
+
+.hero {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.hero img {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin-left: -50px;
+}
+
+.hero .overlay {
+  background-color: #4B4B4B;
+  background-color: rgba(75,75,75, 0.75);
+  color: #fff;
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin-right: -10px;
+  padding: 20px 20px 10px 20px;
+  position: absolute;
+  right: -50px;
+  top: 40px;
+  width: 245px;
+}
+
+#container img {
+  margin-left: -50px;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+}
+
+.figure {
+  margin: 1.75em 0;  
+}
+
+.first {
+  margin-left: 0;
+}
+
+.full {
+  clear: both;
+}
+
+
+/* miscellaneous
+----------------------------------------*/
+
+.hero .cite {
+  border-top: 1px dashed #ccc;
+  font-size: 0.85em;
+  padding-top: 1em;
+}
+
+.post-meta {
+  color: #999999;
+  float: left;
+  font-size: .9em;
+  font-weight: normal;
+  margin-bottom: .8em;
+  width: 150px;
+}
+
+#main .post-title {
+  margin-bottom: .2em;
+}
+
+.post-date {
+  color: #999999;
+  display: block;
+  margin: 0 0 1.5em 0;
+}
+
+#main .references {
+  list-style-type: none;
+  margin-bottom: 1.5em;
+  margin-left: 0;
+}
+
+.references li {
+  margin-bottom: 10px;
+}
+
+.download {
+  margin-bottom: 30px;
+}
+
+.std-btn {
+  padding: 8px 12px;
+}
+
+.download-btn {
+  background-color: #FF3333;
+  border: 1px solid #FF5555;
+  color: #FFFFFF;
+}
+
+.download-btn:link,
+.download-btn:visited {
+  background-color: #FF3333;
+  border: 1px solid #FF7777;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: #FF0000;
+  border: 1px solid #FF7777;
+}
+
+#main .coming-soon {
+  font-size: 65px;
+  font-weigth: normal;
+}
+
+
+/* clearfix */
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* html .group {
+  height: 1%;
+}
+
+*:first-child+html .group {
+  min-height: 1px;
+}
+
